@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9KjA57sY+h0vjjhuzrne74HoRapxoLXH280ARJDu8p2VWB2//WX5o5IZv5tJe0V++nsGLFDvwv/FZuEABwON/A==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\arbweb-org\\wassalny\\s_wassalny\\p_wassalny\\p_wassalny.iOS\\p_wassalny.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akcor\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\akcor\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}

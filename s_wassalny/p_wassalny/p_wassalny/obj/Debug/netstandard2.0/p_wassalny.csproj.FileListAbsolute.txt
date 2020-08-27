@@ -1,0 +1,15 @@
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\bin\Debug\netstandard2.0\p_wassalny.deps.json
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\bin\Debug\netstandard2.0\p_wassalny.dll
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\bin\Debug\netstandard2.0\ref\p_wassalny.dll
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\bin\Debug\netstandard2.0\p_wassalny.pdb
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\p_wassalny.csprojAssemblyReference.cache
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\Views\_c_home.xaml.g.cs
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\p_wassalny.AssemblyInfoInputs.cache
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\p_wassalny.AssemblyInfo.cs
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\p_wassalny.csproj.CoreCompileInputs.cache
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\p_wassalny.dll
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\ref\p_wassalny.dll
+D:\Github\arbweb-org\wassalny\s_wassalny\p_wassalny\p_wassalny\obj\Debug\netstandard2.0\p_wassalny.pdb

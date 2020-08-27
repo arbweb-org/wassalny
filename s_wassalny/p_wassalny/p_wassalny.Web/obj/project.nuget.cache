@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "0H/eDxa2McMguPMZF5Cz7TtkTjbMSrsWkj5PhkMfPRXIR+Qg2WAxtFDJkZWRXhoEZn12dHvjt7kACKYDWsfIJw==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\arbweb-org\\wassalny\\s_wassalny\\p_wassalny\\p_wassalny.Web\\p_wassalny.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akcor\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\akcor\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\akcor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\akcor\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
