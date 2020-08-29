@@ -6,9 +6,7 @@
        Title="p_wassalny"
        x:Class="p_wassalny.AppShell">
 
-    <TabBar>
-        <Tab Title="Home">
-            <ShellContent ContentTemplate="{DataTemplate local:_c_home}" />
-        </Tab>
-    </TabBar>
+    <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate local:_c_home}" />
+    </FlyoutItem>
 </Shell>

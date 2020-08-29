@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Plugin.HybridWebView" Version="1.0.0.1" />
+  </ItemGroup>
+
 </Project>

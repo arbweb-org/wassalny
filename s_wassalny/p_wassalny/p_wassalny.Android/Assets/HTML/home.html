@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css?maptype=sattelite" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+</head>
+
+<body>
+    <div id="b_div_" class="container h-100 w-100">
+        <img id="b_img_" src="img/logo.png" style="display:block; width: 40%; margin:auto; visibility: hidden" />
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>    
+
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            var l_hgt_ = $(window).height() / 3;
+            $("#b_img_").css("margin-top", l_hgt_ + "px");
+            $("#b_img_").css("visibility", "visible");
+
+            // Navigate to the main screen after 3000 milliseconds
+            setTimeout(f_redirect_, 3000);
+        });
+
+        function f_redirect_() { window.location = 'map.html'; }
+    </script>
+</body>
+</html>
