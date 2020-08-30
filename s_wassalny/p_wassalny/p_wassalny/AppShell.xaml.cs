@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace p_wassalny
 {
@@ -10,6 +9,7 @@ namespace p_wassalny
         public AppShell()
         {
             InitializeComponent();
+            Shell.SetNavBarIsVisible(this, false);
         }
     }
 }

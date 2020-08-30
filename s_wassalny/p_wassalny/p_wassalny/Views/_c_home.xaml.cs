@@ -16,15 +16,17 @@ namespace p_wassalny
         {
             InitializeComponent();
 
+            b_web_.AddLocalCallback("v_toggle_flyout_", v_toggle_flyout_);
             b_web_.AddLocalCallback("v_get_location_", v_get_location_);
             
             b_web_.ContentType = WebViewContentType.LocalFile;
             b_web_.Source = "HTML/home.html";
         }
 
-        protected override void OnAppearing()
+        void v_toggle_flyout_(string p_str_)
         {
-            base.OnAppearing();
+            DisplayAlert("Wassalny", "ok", "Cancle");
+            Shell.Current.FlyoutIsPresented = !Shell.Current.FlyoutIsPresented; 
         }
 
         void v_get_location_(string p_str_)
@@ -63,13 +65,16 @@ namespace p_wassalny
             }
             else
             {
-                l_msg_ =
-                    "Location is: " + s_loc_.Latitude + "," +
-                    s_loc_.Longitude +
-                    " Accuracy: " + s_loc_.Accuracy;
+                l_msg_ = string.Join<double>(
+                    ",",
+                    (new double[] 
+                    { 
+                        s_loc_.Latitude,
+                        s_loc_.Longitude,
+                        (double)s_loc_.Accuracy }));
             }
 
-            string l_scr_ = "v_show_loc_('" + l_msg_ + "');";
+            string l_scr_ = "f_set_location_('" + l_msg_ + "');";
             await b_web_.InjectJavascriptAsync(l_scr_);
         }
     }

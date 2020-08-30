@@ -113,12 +113,6 @@
     <AndroidAsset Include="Assets\HTML\map.html" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\HTML\css\bootstrap-grid.min.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\HTML\css\bootstrap-reboot.min.css" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidAsset Include="Assets\HTML\css\bootstrap.min.css" />
   </ItemGroup>
   <ItemGroup>
@@ -140,10 +134,16 @@
     <AndroidAsset Include="Assets\HTML\js\bootstrap.bundle.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\HTML\js\bootstrap.min.js" />
+    <AndroidAsset Include="Assets\HTML\js\jquery-3.5.1.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\HTML\js\jquery-3.5.1.min.js" />
+    <AndroidAsset Include="Assets\HTML\img\Burger_Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HTML\img\menu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HTML\css\_s_map.css" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

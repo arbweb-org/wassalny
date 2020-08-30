@@ -1,10 +1,45 @@
-﻿var s_map_;
-var s_loc_;
+﻿function f_flyout_() { v_toggle_flyout_(''); }
+
+var s_map_ =
+{
+    s_map_: null,       // Bing Map object
+    r_drw_: false,      // Is accuracy circle already rendered?
+    r_loc_:
+    {
+        s_lat_: null,   // Latitude
+        s_lng_: null,   // Longitude
+        s_acu_: null    // Accuracy in meters
+    },
+    r_crc_: null,       // Accuracy circle
+    r_dot_: null,       // Device location pin point (center of the circle)
+
+    get s_loc_() { return this.r_loc_; },
+
+    set s_loc_(p_crd_)
+    {
+        // If app is still aquiring location
+        if (p_crd_ == '') { return; }
+
+        // Set location
+        var l_loc_ = p_crd_.split(',');
+        this.r_loc_.s_lat_ = l_loc_[0];
+        this.r_loc_.s_lng_ = l_loc_[1];
+        this.r_loc_.s_acu_ = l_loc_[2];
+
+        // Render the accuracy circle
+        if (!this.r_drw_)
+        {
+            this.r_drw_ = false;
+        }
+
+        // Move the accuracy circle
+    }
+};
 
 // Map script callback
 function f_init_map_()
 {
-    s_map_ = new Microsoft.Maps.Map('#myMap',
+    s_map_.s_map_ = new Microsoft.Maps.Map('#b_map_',
         {
             credentials: 'AuZIBmC5pvcoKCjQUsa7WG__SmbOcU9eCJUa1qfjEMfXjBVkmspXebJahDhrp6sm',
             center: new Microsoft.Maps.Location(15.62916511, 32.56757639),
@@ -16,34 +51,30 @@ function f_init_map_()
             zoom: 12
         });
 
+    Microsoft.Maps.loadModule(
+        'Microsoft.Maps.SpatialMath',
+        function ()
+        {
+            setInterval(f_get_location_, 1000);
+        });
+
     //Add your post map load code here.
-    var center = s_map_.getCenter();
-
-    setInterval(f_get_location_, 1000);
 }
 
-function get_center_()
+// Centers the map to device location
+function f_center_map_()
 {
-    var l_loc_ = s_map_.getCenter();
+    var l_loc_ = s_map_.s_loc_;
+    if (l_loc_.s_acu_ == null) { return; }      // If app is still aquiring location
 
-    //alert(l_loc_.latitude);
-    //alert(l_loc_.longitude);
+    s_map_.s_map_.setView({ center: new Microsoft.Maps.Location(l_loc_.s_lat_, l_loc_.s_lng_) });
 }
 
-function f_center_() { }
-
-function f_send_text_(p_str_)
-{
-    var l_dta_ = encodeURIComponent(p_str_);
-    v_send_text_(l_dta_);
-}
-
+// Call csharp code to get the location
 function f_get_location_()
-{
-    v_get_location_('');
-}
+{ v_get_location_(''); }
 
-function v_show_loc_(p_msg_)
-{
-    $("#b_msg_").text(p_msg_);
-}
+// The call back that fires after f_get_location_
+// p_msg_: string 'lat,lng,acu', '' If app still aquiring location
+function f_set_location_(p_msg_)
+{ s_map_.s_loc_ = p_msg_; }

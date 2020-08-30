@@ -3,10 +3,14 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        xmlns:local="clr-namespace:p_wassalny"
-       Title="p_wassalny"
+       Title="Wassalny"
        x:Class="p_wassalny.AppShell">
 
     <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate local:_c_home}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="About">
         <ShellContent ContentTemplate="{DataTemplate local:_c_home}" />
     </FlyoutItem>
 </Shell>

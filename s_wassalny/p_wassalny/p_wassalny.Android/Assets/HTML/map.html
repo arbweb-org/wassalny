@@ -3,24 +3,23 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/_c_map.css" />
 </head>
 
 <body>
-    <div id="myMap" class="position-absolute w-100 h-100" style="z-index:1; width: 100%; height: 100%"></div>
+    <img id="b_mnu_"
+         src="img/menu.svg"
+         class="_burger_menu"
+         onclick="f_flyout_()" />
 
-    <div class="bottom-navbar" style="z-index:2; position:absolute; bottom: 0px; font-size:40px; padding:20pt">
+    <div id="b_map_" class="position-absolute w-100 h-100" style="z-index:1; width: 100%; height: 100%"></div>
 
-        <div id="b_msg_" style="font-size:16px">abc</div>
-
-        <img src="img/bt-location.svg" style="width: 30pt; display: block; margin: 5pt"
-             onclick="f_center_()" />
-    </div>
+    <img id="b_loc_"
+         src="img/bt-location.svg"
+         class="_location_icon"
+         onclick="f_center_map_()" />
 
     <!-- Scripts -->
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
